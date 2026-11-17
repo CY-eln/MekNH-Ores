@@ -1,0 +1,11 @@
+{
+  "material": "nickel",
+  "bases": [
+    "stone",
+    "deepslate",
+    "netherrack",
+    "end_stone",
+    "moon_stone",
+    "mars_stone"
+  ]
+}

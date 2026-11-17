@@ -1,0 +1,11 @@
+{
+  "tag": "c:steel",
+  "名称": "钢",
+  "同位体": [
+    "gear",
+    "rotor",
+    "plate",
+    "rod",
+    "wire_fine"
+  ]
+}

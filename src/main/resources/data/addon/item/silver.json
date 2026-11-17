@@ -1,0 +1,18 @@
+{
+  "tag": "c:silver",
+  "名称": "银",
+  "同位体": [
+    "ingot",
+    "dust",
+    "dirty_dust",
+    "nugget",
+    "clump",
+    "crystal",
+    "shard",
+    "gear",
+    "plate",
+    "rod",
+    "wire_fine",
+    "raw"
+  ]
+}

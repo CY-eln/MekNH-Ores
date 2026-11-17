@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RPR",
+    "P P",
+    "RPR"
+  ],
+  "key": {
+    "P": {"item": "meknh_ores:plate_copper"},
+    "R": {"item": "meknh_ores:rod_copper" }
+  },
+  "result": {
+    "id": "meknh_ores:rotor_copper",
+    "count": 1
+  }
+}

@@ -1,0 +1,1 @@
+c_y.meknh_ores.compat.kubejs.MekNHOresKubeJSPlugin

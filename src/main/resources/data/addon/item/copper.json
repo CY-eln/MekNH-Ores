@@ -1,0 +1,11 @@
+{
+  "tag": "c:copper",
+  "名称": "铜",
+  "同位体": [
+    "gear",
+    "rotor",
+    "plate",
+    "rod",
+    "wire_fine"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tag": "c:tungsten",
+  "名称": "钨",
+  "同位体": [
+    "ingot",
+    "dust",
+    "dirty_dust",
+    "nugget",
+    "clump",
+    "crystal",
+    "shard",
+    "hot_ingot",
+    "gear",
+    "plate",
+    "rod",
+    "wire_fine",
+    "raw"
+  ]
+}

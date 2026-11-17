@@ -1,0 +1,18 @@
+{
+  "tag": "c:titanium",
+  "名称": "钛",
+  "同位体": [
+    "ingot",
+    "dust",
+    "dirty_dust",
+    "nugget",
+    "clump",
+    "crystal",
+    "shard",
+    "hot_ingot",
+    "gear",
+    "plate",
+    "rod",
+    "raw"
+  ]
+}
