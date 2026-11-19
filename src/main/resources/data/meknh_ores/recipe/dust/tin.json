@@ -1,0 +1,12 @@
+{
+  "type": "meknh_ores:durability_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"tag": "c:tools/file"},
+    {"tag": "c:ingots/tin"}
+  ],
+  "result": {
+    "id": "mekanism:dust_tin",
+    "count": 1
+  }
+}

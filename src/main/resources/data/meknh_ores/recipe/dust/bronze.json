@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "tag": "c:dusts/tin" },
+    { "tag": "c:dusts/copper" },
+    { "tag": "c:dusts/copper" },
+    { "tag": "c:dusts/copper" }
+  ],
+  "result": {
+    "id": "mekanism:dust_bronze",
+    "count": 4
+  }
+}
