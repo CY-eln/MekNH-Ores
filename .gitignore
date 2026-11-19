@@ -42,7 +42,6 @@ repo/
 !**/src/**/repo/
 
 ### Local development artifacts ###
-mods/
 tools/
 .tmp-run-server.gradle
 
