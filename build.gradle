@@ -41,8 +41,14 @@ repositories {
     maven {
         url = "https://neoforged.forgecdn.net/mojang-meta"
     }
-    flatDir {
-        dir 'mods'
+    maven {
+        url = "https://modmaven.dev/"
+    }
+    maven {
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        url = "https://maven.latvian.dev/releases"
     }
 }
 
@@ -132,7 +138,14 @@ configurations {
 }
 
 dependencies {
-    implementation fileTree(dir: 'mods', include: ['*.jar'])
+    // Compile against Maven-published mod artifacts so CI does not need the local mods/ folder.
+    compileOnly "mekanism:Mekanism:1.21.1-10.7.19.85"
+    compileOnly "mezz.jei:jei-1.21.1-neoforge:19.70.0.469"
+    compileOnly "dev.latvian.mods:kubejs-neoforge:2101.7.2-build.377"
+    compileOnly "dev.latvian.mods:rhino:2101.2.7-build.81"
+
+    // Keep local jars for dev runs, but do not commit them.
+    localRuntime fileTree(dir: 'mods', include: ['*.jar'])
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
