@@ -5,6 +5,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import c_y.meknh_ores.MekNHOres;
+import c_y.meknh_ores.api.item.ItemRegistration;
+import c_y.meknh_ores.recipe.tools.ToolRegistration;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -49,6 +51,8 @@ public final class UnifiedTagPack implements PackResources {
         Map<String, Set<String>> values = new TreeMap<>();
         collectItems(values);
         collectBlocks(values);
+        collectDataForms(values);
+        collectToolTags(values);
 
         Map<String, byte[]> result = new TreeMap<>();
         for (Map.Entry<String, Set<String>> entry : values.entrySet()) {
@@ -88,6 +92,48 @@ public final class UnifiedTagPack implements PackResources {
                 values.computeIfAbsent(parent, ignored -> new TreeSet<>()).add(id.toString());
                 values.computeIfAbsent(child, ignored -> new TreeSet<>()).add(id.toString());
             });
+        }
+    }
+
+    /**
+     * Generate the conventional {@code c:} tags for every data-driven isotope/form registered by
+     * this mod.  {@link #collectItems} only knows the broad resource kinds (ingots, dusts, ores,
+     * ...); plate, rod, gear, rotor, wire, dirty dust, clump, crystal and shard need their own
+     * form folders.
+     */
+    private static void collectDataForms(Map<String, Set<String>> values) {
+        for (ItemRegistration.ItemVariant variant : ItemRegistration.variants()) {
+            ResourceLocation id = variant.id();
+            String folder = variant.form().tagFolder();
+            if (folder.isBlank()) {
+                continue;
+            }
+
+            values.computeIfAbsent("tags/item/" + folder + ".json", ignored -> new TreeSet<>())
+                    .add(id.toString());
+            values.computeIfAbsent("tags/item/" + folder + "/" + variant.definition().material() + ".json",
+                    ignored -> new TreeSet<>()).add(id.toString());
+
+            if ("wires/fine".equals(folder)) {
+                values.computeIfAbsent("tags/item/wires.json", ignored -> new TreeSet<>())
+                        .add("#c:wires/fine");
+            }
+        }
+    }
+
+    /** Generate the conventional tags for the file and mortar crafting tools. */
+    private static void collectToolTags(Map<String, Set<String>> values) {
+        for (ResourceLocation id : ToolRegistration.tools().keySet()) {
+            String path = id.getPath();
+            String type = path.startsWith("file_") ? "file"
+                    : path.startsWith("mortar_") ? "mortar" : null;
+            if (type == null) {
+                continue;
+            }
+            values.computeIfAbsent("tags/item/tools/" + type + ".json", ignored -> new TreeSet<>())
+                    .add(id.toString());
+            values.computeIfAbsent("tags/item/tools.json", ignored -> new TreeSet<>())
+                    .add(id.toString());
         }
     }
 

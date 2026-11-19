@@ -56,4 +56,28 @@ public record ItemForm(String tag, String translationKey, String nameKey) {
     public static synchronized Collection<ItemForm> all() {
         return java.util.List.copyOf(FORMS.values());
     }
+
+    /**
+     * Conventional {@code c:} tag folder for this form.  The plural forms follow the existing
+     * NeoForge/Mekanism conventions (plates, rods, gears, dirty_dusts, ...).
+     */
+    public String tagFolder() {
+        return switch (tag) {
+            case "ingot" -> "ingots";
+            case "dust" -> "dusts";
+            case "dirty_dust" -> "dirty_dusts";
+            case "nugget" -> "nuggets";
+            case "clump" -> "clumps";
+            case "crystal" -> "crystals";
+            case "shard" -> "shards";
+            case "gear" -> "gears";
+            case "rotor" -> "rotors";
+            case "plate" -> "plates";
+            case "rod" -> "rods";
+            case "wire_fine" -> "wires/fine";
+            case "raw" -> "raw_materials";
+            case "hot_ingot" -> "hot_ingots";
+            default -> tag + "s";
+        };
+    }
 }
