@@ -1,8 +1,6 @@
 {
   "type": "meknh_ores:anvil_crushing",
-  "ingredient": {
-    "tag": "c:ingots/bronze"
-  },
+  "ingredient": {"tag": "c:ingots/bronze"},
   "result": {
     "id": "meknh_ores:plate_bronze",
     "count": 1
