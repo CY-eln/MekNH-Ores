@@ -1,0 +1,11 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "meknh_ores:plate_iron",
+    "count": 1
+  },
+  "max_count": 4
+}
