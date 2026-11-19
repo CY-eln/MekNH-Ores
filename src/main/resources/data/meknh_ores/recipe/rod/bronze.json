@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {"tag": "c:tools/file"},
-    {"item": "meknh_ores:ingot_bronze"}
+    {"tag": "c:ingots/bronze"}
   ],
   "result": {
     "id": "meknh_ores:rod_bronze",
