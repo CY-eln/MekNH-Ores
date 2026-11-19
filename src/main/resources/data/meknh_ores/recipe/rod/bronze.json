@@ -1,0 +1,12 @@
+{
+  "type": "meknh_ores:durability_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"tag": "c:tools/file"},
+    {"item": "meknh_ores:ingot_bronze"}
+  ],
+  "result": {
+    "id": "meknh_ores:rod_bronze",
+    "count": 2
+  }
+}

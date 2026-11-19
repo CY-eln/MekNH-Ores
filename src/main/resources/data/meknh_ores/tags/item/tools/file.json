@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "meknh_ores:file_iron",
+    "meknh_ores:file_steel"
+  ]
+}

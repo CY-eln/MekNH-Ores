@@ -1,0 +1,12 @@
+{
+  "type": "meknh_ores:durability_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"tag": "c:tools/file"},
+    {"item": "minecraft:iron_ingot"}
+  ],
+  "result": {
+    "id": "meknh_ores:rod_iron",
+    "count": 2
+  }
+}

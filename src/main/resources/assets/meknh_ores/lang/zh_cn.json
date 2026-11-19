@@ -85,5 +85,10 @@
   "block.meknh_ores.nether_zinc_ore": "下界锌矿石",
   "block.meknh_ores.end_zinc_ore": "末地锌矿石",
   "block.meknh_ores.moon_zinc_ore": "月球锌矿石",
-  "block.meknh_ores.mars_zinc_ore": "火星锌矿石"
+  "block.meknh_ores.mars_zinc_ore": "火星锌矿石",
+  "item.meknh_ores.file_iron": "铁锉",
+  "item.meknh_ores.file_steel": "钢锉",
+  "item.meknh_ores.mortar_iron": "铁研钵",
+  "item.meknh_ores.mortar_steel": "钢研钵",
+  "tooltip.meknh_ores.crafting_tool": "合成工具，每次使用消耗 1 点耐久"
 }

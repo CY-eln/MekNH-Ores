@@ -10,6 +10,7 @@ import c_y.meknh_ores.data.RemovalData;
 import c_y.meknh_ores.network.RemovalNetwork;
 import c_y.meknh_ores.recipe.AnvilCrushingHandler;
 import c_y.meknh_ores.recipe.RecipeRegistration;
+import c_y.meknh_ores.recipe.tools.ToolRegistration;
 import c_y.meknh_ores.resource.UnifiedResourceIndex;
 import c_y.meknh_ores.worldgen.OreWorldgen;
 import c_y.meknh_ores.worldgen.vein.AddVeinBiomeModifier;
@@ -58,6 +59,7 @@ public final class MekNHOres {
         ItemDataLoader.loadFromMods();
         OreBlockRegistration.initialize(modEventBus);
         OreBlockRegistration.registerAll();
+        ToolRegistration.register(modEventBus);
         RecipeRegistration.register(modEventBus);
         OreWorldgen.register(modEventBus);
         modEventBus.addListener(RemovalNetwork::register);
