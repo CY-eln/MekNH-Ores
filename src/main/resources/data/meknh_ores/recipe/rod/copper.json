@@ -2,7 +2,7 @@
   "type": "meknh_ores:durability_shapeless",
   "category": "misc",
   "ingredients": [
-    {"item": "minecraft:shears"},
+    {"tag": "c:tools/file"},
     {"item": "minecraft:copper_ingot"}
   ],
   "result": {

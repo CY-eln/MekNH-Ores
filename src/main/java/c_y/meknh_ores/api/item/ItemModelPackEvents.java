@@ -20,7 +20,7 @@ import net.neoforged.neoforge.event.AddPackFindersEvent;
 /**
  * 把运行时生成的物品模型包挂到客户端资源包列表最上层。
  */
-@EventBusSubscriber(modid = MekNHOres.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = MekNHOres.MODID, value = Dist.CLIENT)
 public final class ItemModelPackEvents {
 
     private static final String PACK_ID = MekNHOres.MODID + ":generated_item_models";

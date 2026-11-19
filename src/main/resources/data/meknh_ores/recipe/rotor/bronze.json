@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RPR",
+    "P P",
+    "RPR"
+  ],
+  "key": {
+    "P": {"item": "meknh_ores:plate_bronze"},
+    "R": {"item": "meknh_ores:rod_bronze" }
+  },
+  "result": {
+    "id": "meknh_ores:rotor_bronze",
+    "count": 1
+  }
+}

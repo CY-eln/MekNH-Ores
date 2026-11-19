@@ -85,5 +85,10 @@
   "block.meknh_ores.nether_zinc_ore": "Nether Zinc Ore",
   "block.meknh_ores.end_zinc_ore": "End Zinc Ore",
   "block.meknh_ores.moon_zinc_ore": "Moon Zinc Ore",
-  "block.meknh_ores.mars_zinc_ore": "Mars Zinc Ore"
+  "block.meknh_ores.mars_zinc_ore": "Mars Zinc Ore",
+  "item.meknh_ores.file_iron": "Iron File",
+  "item.meknh_ores.file_steel": "Steel File",
+  "item.meknh_ores.mortar_iron": "Iron Mortar",
+  "item.meknh_ores.mortar_steel": "Steel Mortar",
+  "tooltip.meknh_ores.crafting_tool": "Crafting tool, consumes 1 durability per use"
 }

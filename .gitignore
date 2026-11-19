@@ -43,7 +43,7 @@ repo/
 
 ### Local development artifacts ###
 mods/
-tools/
+/tools/
 .tmp-run-server.gradle
 
 ### Documentation
