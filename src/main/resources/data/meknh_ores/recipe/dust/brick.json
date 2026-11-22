@@ -1,0 +1,12 @@
+{
+  "type": "meknh_ores:durability_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"tag": "c:tools/mortar"},
+    {"item": "minecraft:bricks"}
+  ],
+  "result": {
+    "id": "meknh_core:dust_brick",
+    "count": 1
+  }
+}
