@@ -1,0 +1,9 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {"tag": "c:ingots/lead"},
+  "result": {
+    "id": "meknh_ores:plate_lead",
+    "count": 1
+  },
+  "max_count": 4
+}

@@ -1,0 +1,9 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {"tag": "c:ingots/zinc"},
+  "result": {
+    "id": "meknh_ores:plate_zinc",
+    "count": 1
+  },
+  "max_count": 4
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NIN",
+    "I I",
+    "NIN"
+  ],
+  "key": {
+    "I": {"tag": "c:ingots/titanium"},
+    "N": {"tag": "c:nuggets/titanium"}
+  },
+  "result": {
+    "id": "meknh_ores:gear_titanium",
+    "count": 1
+  }
+}

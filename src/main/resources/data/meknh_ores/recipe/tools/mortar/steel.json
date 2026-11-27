@@ -7,12 +7,8 @@
     "SSS"
   ],
   "key": {
-    "I": {
-      "tag": "c:ingots/steel"
-    },
-    "S": {
-      "item": "minecraft:stone"
-    }
+    "I": {"tag": "c:ingots/steel"},
+    "S": {"item": "minecraft:stone"}
   },
   "result": {
     "id": "meknh_ores:mortar_steel",

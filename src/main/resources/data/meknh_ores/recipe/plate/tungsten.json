@@ -1,0 +1,9 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {"tag": "c:ingots/tungsten"},
+  "result": {
+    "id": "meknh_ores:plate_tungsten",
+    "count": 1
+  },
+  "max_count": 4
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#c:ores/aluminum",
+    "#c:ores/moon_aluminum",
+    "#c:ores/mars_aluminum",
+    "#c:storage_blocks/raw_aluminum",
+    "#c:ores/titanium",
+    "#c:ores/moon_titanium",
+    "#c:ores/mars_titanium",
+    "#c:storage_blocks/raw_titanium"
+  ]
+}

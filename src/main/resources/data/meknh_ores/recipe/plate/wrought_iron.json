@@ -1,0 +1,9 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {"tag": "c:ingots/wrought_iron"},
+  "result": {
+    "id": "meknh_ores:plate_wrought_iron",
+    "count": 1
+  },
+  "max_count": 4
+}
