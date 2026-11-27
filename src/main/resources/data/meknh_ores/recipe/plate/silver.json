@@ -1,0 +1,9 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {"tag": "c:ingots/silver"},
+  "result": {
+    "id": "meknh_ores:plate_silver",
+    "count": 1
+  },
+  "max_count": 4
+}

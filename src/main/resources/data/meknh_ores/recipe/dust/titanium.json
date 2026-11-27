@@ -1,0 +1,12 @@
+{
+  "type": "meknh_ores:durability_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {"tag": "c:tools/mortar"},
+    {"tag": "c:ingots/titanium"}
+  ],
+  "result": {
+    "id": "meknh_ores:dust_titanium",
+    "count": 1
+  }
+}

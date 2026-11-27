@@ -72,7 +72,8 @@ public final class OreBlockRegistration {
                         .strength(3.0F, 3.0F)
                         .requiresCorrectToolForDrops()
                         .sound(SoundType.STONE),
-                drop));
+                drop,
+                material));
         DeferredItem<BlockItem> item = ITEMS.registerItem(path,
                 properties -> new BlockItem(block.get(), properties));
         VARIANTS.put(path, new OreVariant(path, material, base, texture, block, item));

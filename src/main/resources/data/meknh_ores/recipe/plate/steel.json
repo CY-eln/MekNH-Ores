@@ -1,0 +1,9 @@
+{
+  "type": "meknh_ores:anvil_crushing",
+  "ingredient": {"tag": "c:ingots/steel"},
+  "result": {
+    "id": "meknh_ores:plate_steel",
+    "count": 1
+  },
+  "max_count": 4
+}

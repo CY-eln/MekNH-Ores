@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NIN",
+    "I I",
+    "NIN"
+  ],
+  "key": {
+    "I": {"tag": "c:ingots/aluminum"},
+    "N": {"tag": "c:nuggets/aluminum"}
+  },
+  "result": {
+    "id": "meknh_ores:gear_aluminum",
+    "count": 1
+  }
+}

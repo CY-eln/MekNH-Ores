@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NIN",
+    "I I",
+    "NIN"
+  ],
+  "key": {
+    "I": {"tag": "c:ingots/copper"},
+    "N": {"tag": "c:nuggets/copper"}
+  },
+  "result": {
+    "id": "meknh_ores:gear_copper",
+    "count": 1
+  }
+}

@@ -7,8 +7,8 @@
     "RPR"
   ],
   "key": {
-    "P": {"item": "meknh_ores:plate_iron"},
-    "R": {"item": "meknh_ores:rod_iron" }
+    "P": {"tag": "c:plates/iron"},
+    "R": {"tag": "c:rods/iron"}
   },
   "result": {
     "id": "meknh_ores:rotor_iron",

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#c:ores/tungsten",
+    "#c:ores/moon_tungsten",
+    "#c:ores/mars_tungsten",
+    "#c:storage_blocks/raw_tungsten"
+  ]
+}

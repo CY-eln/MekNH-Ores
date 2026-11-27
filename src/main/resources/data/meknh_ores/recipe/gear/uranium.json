@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NIN",
+    "I I",
+    "NIN"
+  ],
+  "key": {
+    "I": {"tag": "c:ingots/uranium"},
+    "N": {"tag": "c:nuggets/uranium"}
+  },
+  "result": {
+    "id": "meknh_ores:gear_uranium",
+    "count": 1
+  }
+}

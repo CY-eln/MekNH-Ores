@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "NIN",
+    "I I",
+    "NIN"
+  ],
+  "key": {
+    "I": {"tag": "c:ingots/iron"},
+    "N": {"tag": "c:nuggets/iron"}
+  },
+  "result": {
+    "id": "meknh_ores:gear_iron",
+    "count": 1
+  }
+}
