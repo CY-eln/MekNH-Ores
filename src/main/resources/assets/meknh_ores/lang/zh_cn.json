@@ -90,5 +90,6 @@
   "item.meknh_ores.file_steel": "钢锉",
   "item.meknh_ores.mortar_iron": "铁研钵",
   "item.meknh_ores.mortar_steel": "钢研钵",
-  "tooltip.meknh_ores.crafting_tool": "合成工具，每次使用消耗 1 点耐久"
+  "tooltip.meknh_ores.crafting_tool": "合成工具，每次使用消耗 1 点耐久",
+  "jei.meknh_ores.anvil_crushing": "铁砧下落"
 }
