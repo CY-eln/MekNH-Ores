@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.block.Blocks;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -33,18 +34,18 @@ public final class MekNHOresJeiPlugin implements IModPlugin {
     private static IJeiRuntime runtime;
 
     @Override
-    public ResourceLocation getPluginUid() {
+    public @NotNull ResourceLocation getPluginUid() {
         return UID;
     }
 
     @Override
-    public void registerCategories(IRecipeCategoryRegistration registration) {
+    public void registerCategories(@NotNull IRecipeCategoryRegistration registration) {
         registration.addRecipeCategories(
                 new AnvilCrushingJeiCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
     @Override
-    public void registerRecipes(IRecipeRegistration registration) {
+    public void registerRecipes(@NotNull IRecipeRegistration registration) {
         ClientLevel level = Minecraft.getInstance().level;
         if (level == null) {
             return;
@@ -58,14 +59,14 @@ public final class MekNHOresJeiPlugin implements IModPlugin {
     }
 
     @Override
-    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+    public void registerRecipeCatalysts(@NotNull IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(Blocks.ANVIL), AnvilCrushingJeiCategory.RECIPE_TYPE);
         registration.addRecipeCatalyst(new ItemStack(Blocks.CHIPPED_ANVIL), AnvilCrushingJeiCategory.RECIPE_TYPE);
         registration.addRecipeCatalyst(new ItemStack(Blocks.DAMAGED_ANVIL), AnvilCrushingJeiCategory.RECIPE_TYPE);
     }
 
     @Override
-    public void onRuntimeAvailable(IJeiRuntime runtime) {
+    public void onRuntimeAvailable(@NotNull IJeiRuntime runtime) {
         MekNHOresJeiPlugin.runtime = runtime;
         hideAll();
     }

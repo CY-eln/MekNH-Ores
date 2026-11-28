@@ -12,6 +12,7 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
+import org.jetbrains.annotations.NotNull;
 
 /** JEI category for falling-anvil crushing recipes. */
 public final class AnvilCrushingJeiCategory implements IRecipeCategory<AnvilCrushingRecipe> {
@@ -26,12 +27,12 @@ public final class AnvilCrushingJeiCategory implements IRecipeCategory<AnvilCrus
     }
 
     @Override
-    public RecipeType<AnvilCrushingRecipe> getRecipeType() {
+    public @NotNull RecipeType<AnvilCrushingRecipe> getRecipeType() {
         return RECIPE_TYPE;
     }
 
     @Override
-    public Component getTitle() {
+    public @NotNull Component getTitle() {
         return Component.translatable("jei.meknh_ores.anvil_crushing");
     }
 
@@ -46,12 +47,13 @@ public final class AnvilCrushingJeiCategory implements IRecipeCategory<AnvilCrus
     }
 
     @Override
-    public IDrawable getIcon() {
+    public @NotNull IDrawable getIcon() {
         return this.icon;
     }
 
     @Override
-    public void setRecipe(IRecipeLayoutBuilder builder, AnvilCrushingRecipe recipe, IFocusGroup focuses) {
+    public void setRecipe(@NotNull IRecipeLayoutBuilder builder, @NotNull AnvilCrushingRecipe recipe,
+                          @NotNull IFocusGroup focuses) {
         builder.addInputSlot(8, 11).addIngredients(recipe.ingredient());
         builder.addSlot(RecipeIngredientRole.CATALYST, 48, 11)
                 .addItemStack(new ItemStack(Blocks.ANVIL));
